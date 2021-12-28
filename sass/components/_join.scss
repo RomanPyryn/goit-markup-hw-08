@@ -1,0 +1,40 @@
+.join {
+  margin-left: 70px;
+  color: var(--white);
+  fill: var(--white);
+}
+
+.join__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.join__list {
+  display: flex;
+}
+
+.join__item + .join__item {
+  margin-left: 10px;
+}
+
+.join__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white);
+
+  transition: background-color var(--action-time) var(--action-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-text-color);
+  }
+}

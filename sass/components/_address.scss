@@ -1,0 +1,23 @@
+.address {
+  margin-top: 20px;
+}
+
+.address__link {
+  font-style: normal;
+
+  color: var(--footer-text-color);
+  transition: color var(--action-time) var(--action-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+  }
+}
+
+.map {
+  color: var(--white);
+}
+
+.address__item + .address__item {
+  margin-top: 9px;
+}

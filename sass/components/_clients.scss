@@ -1,0 +1,28 @@
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__item + .clients__item {
+  margin-left: var(--card-set-gap);
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-color);
+
+  transition: border var(--action-time) var(--action-function),
+    fill var(--action-time) var(--action-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hover-text-color);
+    fill: var(--hover-text-color);
+  }
+}

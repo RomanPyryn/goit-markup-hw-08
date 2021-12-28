@@ -1,0 +1,16 @@
+.logo {
+  color: var(--hover-text-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo__part--black {
+  color: var(--black);
+}
+
+.logo__part--white {
+  color: var(--white);
+}

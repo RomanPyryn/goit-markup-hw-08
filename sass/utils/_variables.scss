@@ -1,0 +1,21 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hover-text-color: #2196f3;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --black: #000000;
+  --white: #ffffff;
+  --secondary-bg: #f5f4fa;
+  --footer-bg: #2f303a;
+  --action-bg: rgba(33, 150, 243, 0.9);
+  --border-color: #eeeeee;
+  --icon-color: #afb1b8;
+
+  --card-set-gap: 30px;
+  --title-gap: 50px;
+  --action-time: 250ms;
+  --action-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

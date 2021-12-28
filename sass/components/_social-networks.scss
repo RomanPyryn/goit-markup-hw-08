@@ -1,0 +1,28 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+
+  transition: background-color var(--action-time) var(--action-function),
+    fill var(--action-time) var(--action-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--white);
+    background-color: var(--hover-text-color);
+  }
+}
+
+.social-networks__item + .social-networks__item {
+  margin-left: 10px;
+}
