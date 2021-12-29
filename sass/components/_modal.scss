@@ -2,10 +2,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  width: calc(100% - 30px);
+  height: 609px;
 
   padding: 40px;
-  width: 528px;
-  height: 581px;
 
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -14,6 +14,15 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--action-time) var(--action-function);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop__is-hidden .modal {

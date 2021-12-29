@@ -8,6 +8,8 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
+  z-index: 11;
+
   opacity: 1;
   transition: opacity var(--action-time) var(--action-function),
     visibility var(--action-time) var(--action-function);

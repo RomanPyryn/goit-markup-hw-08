@@ -1,11 +1,22 @@
 .filters {
-  margin-bottom: var(--title-gap);
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: var(--title-gap);
+  }
 }
 
-.filters__item + .filters__item {
-  margin-left: 8px;
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters__item:not(:nth-last-child(-n + 2)) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filters__button {
