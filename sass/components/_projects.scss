@@ -8,18 +8,13 @@
     margin-top: calc(-1 * var(--card-set-gap));
     margin-left: calc(-1 * var(--card-set-gap));
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
-  }
 }
 
 .projects__card {
-  &:not(:last-child) {
-    margin-bottom: var(--card-set-gap);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: var(--card-set-gap);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -36,8 +31,6 @@
 }
 
 .projects__link {
-  display: inline-block;
-
   transition: box-shadow var(--action-time) var(--action-function);
 
   &:hover,
@@ -62,7 +55,12 @@
   padding: 20px 24px;
   background: var(--white);
   border: 1px solid var(--border-color);
-  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &--min-height {
+      min-height: 148px;
+    }
+  }
 }
 
 .projects__actions {
