@@ -7,6 +7,10 @@
     justify-content: center;
     margin-bottom: var(--card-set-gap);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: var(--title-gap);
+  }
 }
 
 .filters__item:not(:last-child) {

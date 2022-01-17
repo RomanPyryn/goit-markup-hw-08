@@ -94,6 +94,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .section__display-none {
     display: none;
@@ -824,6 +831,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: var(--title-gap);
   }
 }
 
